@@ -47,9 +47,8 @@ namespace grpc_rest_api
             else
             {
                 app.UseHsts();
+                app.UseHttpsRedirection();
             }
-
-            app.UseHttpsRedirection();
 
             app.UseRouting();
 
